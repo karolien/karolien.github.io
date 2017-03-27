@@ -134,7 +134,7 @@ Let's give them some options...</p>
 <h2>Arrays</h2>
 </div></div>
 <div class="sl-block" data-block-type="text" style="height: auto; width: 901px; left: 39px; top: 132px;" data-block-id="c0ae09f4933c291247948bf9a86c4b56"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
-<p>An array is like a book with chapters in it. If you know which page a chapter begins at you can jump to that page and begin reading!</p>
+<p>An array is like a book with chapters in it. If you know which page a chapter begins at you can jump to that page and start reading!</p>
 
 <p> </p>
 
@@ -162,6 +162,24 @@ print("You chose " + race_name)</code></pre></div></div>
 <div class="sl-block" data-block-type="text" style="height: auto; width: 901px; left: 39px; top: 482px;" data-block-id="0a82907d6fbc4edb983ffcc722c5c81b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16;" dir="ui">
 <p>Remember we stored the user's input into the variable  'race_choice'?<br>
 If the user entered 2, 'race_name' will be the value associated with the index 2 of the array 'races' = Dwarf</p>
+</div></div></section><section data-id="5ed166254d18864053995435060be400"><div class="sl-block" data-block-type="text" style="height: auto; width: 838px; left: 61px; top: 22px;" data-block-id="9bcdb99ea791133edacc0d5164199ae5"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;">
+<h2>Checkpoint!</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 901px; left: 39px; top: 132px;" data-block-id="a5498a68d6979f7fcab4086ed7bc4540"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p>By now your code should look something like this:</p>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 835px; height: 328px; left: 72px; top: 186px;" data-block-id="71091938318be132ead33bb07aa651bc"><div class="sl-block-content" style="z-index: 12; font-size: 150%;" data-highlight-theme="zenburn"><pre><code>print("Welcome to Choose Your Own Adventure")
+name = input("Please enter a character name: ")
+print("Hi, " + name + " thank you for playing.")
+
+print("Please enter your choice for race.")
+print("0. Elf 1. Goblin 2. Dwarf 3. Human")
+race_choice = int(input("Enter your choice: "))
+
+race_name = races[race_choice]
+print("You chose " + race_name)</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 819px; left: 72px; top: 552px;" data-block-id="ed24da56391ebaade46dd884511d6328"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
+<p>If you are having any problems stick your hand up and one of our coders will come help you out :)</p>
 </div></div></section>
 			</div>
 		</div>
@@ -169,7 +187,7 @@ If the user entered 2, 'race_name' will be the value associated with the index 2
 
 		
 <script>
-	var SLConfig = {"current_user":{"id":680437,"username":"karolienkoorts","name":"Karolien Koorts","description":null,"thumbnail_url":"//graph.facebook.com/1712153498801926/picture","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":529536,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"editor_grid":true,"editor_snap":true,"developer_mode":false,"speaker_layout":null,"phone_number":null,"phone_country_code":null},"email":"ztopth@hotmail.com","notify_on_receipt":true,"billing_address":null,"editor_tutorial_completed":true,"manually_upgraded":false,"deck_user_editor_limit":1},"deck":{"id":948831,"slug":"coding-101","title":"Coding 101","description":"","width":960,"height":700,"visibility":"all","published_at":"2017-03-27T07:08:47.009Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/cc907e6fdac2c1f630690c6216d86607/thumb.jpg","view_count":0,"user":{"id":680437,"username":"karolienkoorts","name":"Karolien Koorts","description":null,"thumbnail_url":"//graph.facebook.com/1712153498801926/picture","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":529536,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"montserrat","theme_color":"beige-brown","auto_slide_interval":0,"comments_enabled":false,"forking_enabled":false,"rolling_links":false,"center":false,"should_loop":false,"share_notes":false,"slide_number":false,"rtl":false,"version":2,"collaborative":null,"deck_user_editor_limit":1,"data_updated_at":1490603957363,"font_typekit":null,"font_google":null,"access_token":"iqU59b1cRXHxtJqQk2zcobJJHEzr","notes":{}}};
+	var SLConfig = {"current_user":{"id":680437,"username":"karolienkoorts","name":"Karolien Koorts","description":null,"thumbnail_url":"//graph.facebook.com/1712153498801926/picture","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":529536,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"editor_grid":true,"editor_snap":true,"developer_mode":false,"speaker_layout":null,"phone_number":null,"phone_country_code":null},"email":"ztopth@hotmail.com","notify_on_receipt":true,"billing_address":null,"editor_tutorial_completed":true,"manually_upgraded":false,"deck_user_editor_limit":1},"deck":{"id":948831,"slug":"coding-101","title":"Coding 101","description":"","width":960,"height":700,"visibility":"all","published_at":"2017-03-27T07:08:47.009Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/cc907e6fdac2c1f630690c6216d86607/thumb.jpg","view_count":0,"user":{"id":680437,"username":"karolienkoorts","name":"Karolien Koorts","description":null,"thumbnail_url":"//graph.facebook.com/1712153498801926/picture","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":529536,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"montserrat","theme_color":"beige-brown","auto_slide_interval":0,"comments_enabled":false,"forking_enabled":false,"rolling_links":false,"center":false,"should_loop":false,"share_notes":false,"slide_number":false,"rtl":false,"version":2,"collaborative":null,"deck_user_editor_limit":1,"data_updated_at":1490604342646,"font_typekit":null,"font_google":null,"access_token":"iqU59b1cRXHxtJqQk2zcobJJHEzr","notes":{}}};
 </script>
 
 		<script>
