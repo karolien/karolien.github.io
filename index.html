@@ -243,6 +243,44 @@ else:
 <div class="sl-block" data-block-type="code" style="width: 204px; height: 52px; left: 388px; top: 450px;" data-block-id="987295b901ad67e209711324cbdc61d1"><div class="sl-block-content" style="z-index: 14; font-size: 150%;" data-highlight-theme="zenburn"><pre><code>time.sleep(2)</code></pre></div></div>
 <div class="sl-block" data-block-type="text" style="height: auto; width: 819px; left: 96px; top: 535px;" data-block-id="4dee50a47d7ba5ceae439a9ccf3d6d47"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15;">
 <p>This will add a pause of 2 seconds. You can change the value to whatever you think is good!</p>
+</div></div></section><section data-id="6789e4482b43ba5e0e708b549b96645a"><div class="sl-block" data-block-type="text" style="height: auto; width: 838px; left: 61px; top: 22px;" data-block-id="406fd0113e65342060637c4fa3aeae6a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;">
+<h2>More Action</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 901px; left: 30px; top: 117px;" data-block-id="bf9e77d9102feef77033a3b9df4838a4"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p>Let's give our hero some more choices:</p>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 758px; height: 115px; left: 109px; top: 182px;" data-block-id="81e3be2794572448c5f3b0c2de8b014a"><div class="sl-block-content" style="z-index: 12; font-size: 150%;" data-highlight-theme="zenburn"><pre><code>print("A wild monster appears! Select a reponse:")
+print("0. Cower in fear! 1. RUN! 2. Fight!")
+response = int(input("Enter your choice: "))</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 819px; left: 97px; top: 318px;" data-block-id="976e6df7559a6637bfc53994cdd9861c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
+<p>We can use our conditional statements again here:</p>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 863px; height: 258px; left: 61px; top: 372px;" data-block-id="be172245e1333d1914bc953380470b5b"><div class="sl-block-content" style="z-index: 15; font-size: 150%;" data-highlight-theme="zenburn"><pre><code>if response == 0:
+    print("You were eaten by the monster!")
+    quit()
+elif response == 1:
+    print("You run and the monster destroys a village.")
+else:
+    print("You prepare for battle")</code></pre></div></div></section><section data-id="b5298d5f83d5c8801508fa4d82c0e020"><div class="sl-block" data-block-type="text" style="height: auto; width: 838px; left: 61px; top: 22px;" data-block-id="f44ed6f99fb94d6fbb3ae8347742ee5f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;">
+<h2>Loops!</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 901px; left: 30px; top: 117px;" data-block-id="edad5d35c2998cfefef9eb553a3451a5"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p>Sometimes we need to do something several times. Loops let you run a block of code over and over again...</p>
+
+<p>Let's add the following code inside our 'else' statement from before:</p>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 952px; height: 255px; left: 19px; top: 281px;" data-block-id="6e48b306cb1418d1b1ee60194a4e014a"><div class="sl-block-content" style="z-index: 12; font-size: 150%;" data-highlight-theme="zenburn"><pre><code>else:
+    print("You prepare for battle")
+
+    for i in range(3):
+        time.sleep(2)
+        print("You hit the monster and it takes some damage!")
+
+    print("You killed the monster!")</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 901px; left: 30px; top: 553px;" data-block-id="affb8ebbe860ca2ec8954592fe73bed7"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
+<p>This loop will go 3 times (try changing the value in range)</p>
+
+<p>Notice the indents (4 spaces) again - they decide which blocks of code belong to which statement.</p>
 </div></div></section>
 			</div>
 		</div>
@@ -250,7 +288,7 @@ else:
 
 		
 <script>
-	var SLConfig = {"current_user":{"id":680437,"username":"karolienkoorts","name":"Karolien Koorts","description":null,"thumbnail_url":"//graph.facebook.com/1712153498801926/picture","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":529536,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"editor_grid":true,"editor_snap":true,"developer_mode":false,"speaker_layout":null,"phone_number":null,"phone_country_code":null},"email":"ztopth@hotmail.com","notify_on_receipt":true,"billing_address":null,"editor_tutorial_completed":true,"manually_upgraded":false,"deck_user_editor_limit":1},"deck":{"id":948831,"slug":"coding-101","title":"Coding 101","description":"","width":960,"height":700,"visibility":"all","published_at":"2017-03-27T07:08:47.009Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/cc907e6fdac2c1f630690c6216d86607/thumb.jpg","view_count":0,"user":{"id":680437,"username":"karolienkoorts","name":"Karolien Koorts","description":null,"thumbnail_url":"//graph.facebook.com/1712153498801926/picture","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":529536,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"montserrat","theme_color":"beige-brown","auto_slide_interval":0,"comments_enabled":false,"forking_enabled":false,"rolling_links":false,"center":false,"should_loop":false,"share_notes":false,"slide_number":false,"rtl":false,"version":2,"collaborative":null,"deck_user_editor_limit":1,"data_updated_at":1490605325674,"font_typekit":null,"font_google":null,"access_token":"iqU59b1cRXHxtJqQk2zcobJJHEzr","notes":{}}};
+	var SLConfig = {"current_user":{"id":680437,"username":"karolienkoorts","name":"Karolien Koorts","description":null,"thumbnail_url":"//graph.facebook.com/1712153498801926/picture","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":529536,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"editor_grid":true,"editor_snap":true,"developer_mode":false,"speaker_layout":null,"phone_number":null,"phone_country_code":null},"email":"ztopth@hotmail.com","notify_on_receipt":true,"billing_address":null,"editor_tutorial_completed":true,"manually_upgraded":false,"deck_user_editor_limit":1},"deck":{"id":948831,"slug":"coding-101","title":"Coding 101","description":"","width":960,"height":700,"visibility":"all","published_at":"2017-03-27T07:08:47.009Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/cc907e6fdac2c1f630690c6216d86607/thumb.jpg","view_count":0,"user":{"id":680437,"username":"karolienkoorts","name":"Karolien Koorts","description":null,"thumbnail_url":"//graph.facebook.com/1712153498801926/picture","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":529536,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"montserrat","theme_color":"beige-brown","auto_slide_interval":0,"comments_enabled":false,"forking_enabled":false,"rolling_links":false,"center":false,"should_loop":false,"share_notes":false,"slide_number":false,"rtl":false,"version":2,"collaborative":null,"deck_user_editor_limit":1,"data_updated_at":1490606712740,"font_typekit":null,"font_google":null,"access_token":"iqU59b1cRXHxtJqQk2zcobJJHEzr","notes":{}}};
 </script>
 
 		<script>
