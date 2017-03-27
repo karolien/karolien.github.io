@@ -180,6 +180,69 @@ race_name = races[race_choice]
 print("You chose " + race_name)</code></pre></div></div>
 <div class="sl-block" data-block-type="text" style="height: auto; width: 819px; left: 72px; top: 552px;" data-block-id="ed24da56391ebaade46dd884511d6328"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
 <p>If you are having any problems stick your hand up and one of our coders will come help you out :)</p>
+</div></div></section><section data-id="c65941442152e9a584af7635203871f8"><div class="sl-block" data-block-type="text" style="height: auto; width: 838px; left: 61px; top: 22px;" data-block-id="15f5f1abe38702aae1b9e96fc52d5299"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;">
+<h2>Conditions!</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 901px; left: 39px; top: 132px;" data-block-id="5af97354076f98d34dc8a45756610357"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p>We want to have different things happen depending on what choices the user makes:</p>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 835px; height: 90px; left: 86px; top: 235px;" data-block-id="c0dfa44477544aeaf796ca6d4353f330"><div class="sl-block-content" style="z-index: 12; font-size: 150%;" data-highlight-theme="zenburn"><pre><code>if race == "Elf":
+    print("Your homeland is in the forest")</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 819px; left: 80px; top: 342px;" data-block-id="79222208cbc6dc432ff81cc7067aa392"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p>Notice that the second line has an indent (4 spaces)</p>
+
+<p><br>
+This is important for Python as it helps the program know which statements belong to which condition!<br>
+<br>
+You will get an error if your 'if' statement is not followed by an indented line.</p>
+</div></div></section><section data-id="871c39a6782a3a6aedf97c86536d1862"><div class="sl-block" data-block-type="text" style="height: auto; width: 838px; left: 61px; top: 22px;" data-block-id="eec4cd8edc1608afa5976612fb8a8ba0"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;">
+<h2>More Conditions!</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 901px; left: 30px; top: 117px;" data-block-id="8c008c81a572d6e60efb764f15449929"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p>Let's add some branches in the code for each of the race choices:</p>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 835px; height: 255px; left: 80px; top: 210px;" data-block-id="77459d5deda5e5ab6b8a33eca98fab54"><div class="sl-block-content" style="z-index: 12; font-size: 150%;" data-highlight-theme="zenburn"><pre><code>if race == "Elf":
+    print("Your homeland is in the forest")
+elif race == "Goblin":
+    print("Your homeland is the mountains")
+elif race == "Dwarf":
+    print("Your homeland is in the mines underground")
+else:
+    print("Your homeland is in the city")</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 819px; left: 88px; top: 484px;" data-block-id="2feb86a26e75bb9295ad52ebc1e8c682"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p>'Elif' means 'else if' - this branch will only be checked if the previous condition isn't true.</p>
+
+<p>'Else' is only checked if none of the previous conditions were true</p>
+</div></div></section><section data-id="5fd932ddc63d13918ca1368f9227285f"><div class="sl-block" data-block-type="text" style="height: auto; width: 838px; left: 61px; top: 22px;" data-block-id="6d5f51c8381e5871aa251d321c91c1f5"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;">
+<h2>Slow down!</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 901px; left: 30px; top: 117px;" data-block-id="4d73765eae1c46dc6d88776291aa3add"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p>There is a lot of text output - let's slow things down by adding a some pauses here and there...</p>
+
+<p>Add this to the very top of your code:</p>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 174px; height: 52px; left: 394px; top: 261px;" data-block-id="174cc29ce5fb32b5513157e21517842a"><div class="sl-block-content" style="z-index: 12; font-size: 150%;" data-highlight-theme="zenburn"><pre><code>import time</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 819px; left: 89px; top: 342px;" data-block-id="45f2875813f4baa71543fa8b3b1cd53e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p>Wherever you think is a good place to put a pause, add the following line:</p>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 204px; height: 52px; left: 388px; top: 450px;" data-block-id="856ada58cd712aebef888d35b4c6e200"><div class="sl-block-content" style="z-index: 15; font-size: 150%;" data-highlight-theme="zenburn"><pre><code>time.sleep(2)</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 819px; left: 96px; top: 535px;" data-block-id="705cf121b38c29c52f66410150e181fa"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16;">
+<p>This will add a pause of 2 seconds. You can change the value to whatever you think is good!</p>
+</div></div></section><section data-id="4dc87bb51a27acf6af87b21f1c588305"><div class="sl-block" data-block-type="text" style="height: auto; width: 838px; left: 61px; top: 22px;" data-block-id="c308af189cf924a877c81c61f4dcca22"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;">
+<h2>Slow down!</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 901px; left: 30px; top: 117px;" data-block-id="f9b303190403fe9a6c2919e48dd5419b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p>There is a lot of text output - let's slow things down by adding a some pauses here and there...</p>
+
+<p>Add this to the very top of your code:</p>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 174px; height: 52px; left: 394px; top: 261px;" data-block-id="36d87509e9865a11bf3779cfcdecbd89"><div class="sl-block-content" style="z-index: 12; font-size: 150%;" data-highlight-theme="zenburn"><pre><code>import time</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 819px; left: 89px; top: 342px;" data-block-id="d85e8d15358f264a1d60d2ed51fe5e76"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p>Wherever you think is a good place to put a pause, add the following line:</p>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 204px; height: 52px; left: 388px; top: 450px;" data-block-id="987295b901ad67e209711324cbdc61d1"><div class="sl-block-content" style="z-index: 14; font-size: 150%;" data-highlight-theme="zenburn"><pre><code>time.sleep(2)</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 819px; left: 96px; top: 535px;" data-block-id="4dee50a47d7ba5ceae439a9ccf3d6d47"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15;">
+<p>This will add a pause of 2 seconds. You can change the value to whatever you think is good!</p>
 </div></div></section>
 			</div>
 		</div>
@@ -187,7 +250,7 @@ print("You chose " + race_name)</code></pre></div></div>
 
 		
 <script>
-	var SLConfig = {"current_user":{"id":680437,"username":"karolienkoorts","name":"Karolien Koorts","description":null,"thumbnail_url":"//graph.facebook.com/1712153498801926/picture","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":529536,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"editor_grid":true,"editor_snap":true,"developer_mode":false,"speaker_layout":null,"phone_number":null,"phone_country_code":null},"email":"ztopth@hotmail.com","notify_on_receipt":true,"billing_address":null,"editor_tutorial_completed":true,"manually_upgraded":false,"deck_user_editor_limit":1},"deck":{"id":948831,"slug":"coding-101","title":"Coding 101","description":"","width":960,"height":700,"visibility":"all","published_at":"2017-03-27T07:08:47.009Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/cc907e6fdac2c1f630690c6216d86607/thumb.jpg","view_count":0,"user":{"id":680437,"username":"karolienkoorts","name":"Karolien Koorts","description":null,"thumbnail_url":"//graph.facebook.com/1712153498801926/picture","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":529536,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"montserrat","theme_color":"beige-brown","auto_slide_interval":0,"comments_enabled":false,"forking_enabled":false,"rolling_links":false,"center":false,"should_loop":false,"share_notes":false,"slide_number":false,"rtl":false,"version":2,"collaborative":null,"deck_user_editor_limit":1,"data_updated_at":1490604342646,"font_typekit":null,"font_google":null,"access_token":"iqU59b1cRXHxtJqQk2zcobJJHEzr","notes":{}}};
+	var SLConfig = {"current_user":{"id":680437,"username":"karolienkoorts","name":"Karolien Koorts","description":null,"thumbnail_url":"//graph.facebook.com/1712153498801926/picture","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":529536,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"editor_grid":true,"editor_snap":true,"developer_mode":false,"speaker_layout":null,"phone_number":null,"phone_country_code":null},"email":"ztopth@hotmail.com","notify_on_receipt":true,"billing_address":null,"editor_tutorial_completed":true,"manually_upgraded":false,"deck_user_editor_limit":1},"deck":{"id":948831,"slug":"coding-101","title":"Coding 101","description":"","width":960,"height":700,"visibility":"all","published_at":"2017-03-27T07:08:47.009Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/cc907e6fdac2c1f630690c6216d86607/thumb.jpg","view_count":0,"user":{"id":680437,"username":"karolienkoorts","name":"Karolien Koorts","description":null,"thumbnail_url":"//graph.facebook.com/1712153498801926/picture","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":529536,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"montserrat","theme_color":"beige-brown","auto_slide_interval":0,"comments_enabled":false,"forking_enabled":false,"rolling_links":false,"center":false,"should_loop":false,"share_notes":false,"slide_number":false,"rtl":false,"version":2,"collaborative":null,"deck_user_editor_limit":1,"data_updated_at":1490605325674,"font_typekit":null,"font_google":null,"access_token":"iqU59b1cRXHxtJqQk2zcobJJHEzr","notes":{}}};
 </script>
 
 		<script>
