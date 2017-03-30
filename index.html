@@ -168,7 +168,7 @@ If the user entered 2, 'race_name' will be the value associated with the index 2
 <div class="sl-block" data-block-type="text" style="height: auto; width: 901px; left: 39px; top: 132px;" data-block-id="a5498a68d6979f7fcab4086ed7bc4540"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
 <p>By now your code should look something like this:</p>
 </div></div>
-<div class="sl-block" data-block-type="code" style="width: 835px; height: 328px; left: 72px; top: 186px;" data-block-id="71091938318be132ead33bb07aa651bc"><div class="sl-block-content" style="z-index: 12; font-size: 150%;" data-highlight-theme="zenburn"><pre><code>print("Welcome to Choose Your Own Adventure")
+<div class="sl-block" data-block-type="code" style="width: 835px; height: 358px; left: 72px; top: 186px;" data-block-id="71091938318be132ead33bb07aa651bc"><div class="sl-block-content" style="z-index: 12; font-size: 150%;" data-highlight-theme="zenburn"><pre><code>print("Welcome to Choose Your Own Adventure")
 name = input("Please enter a character name: ")
 print("Hi, " + name + " thank you for playing.")
 
@@ -187,7 +187,7 @@ print("You chose " + race_name)</code></pre></div></div>
 <div class="sl-block" data-block-type="text" style="height: auto; width: 901px; left: 39px; top: 132px;" data-block-id="5af97354076f98d34dc8a45756610357"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
 <p>We want to have different things happen depending on what choices the user makes:</p>
 </div></div>
-<div class="sl-block" data-block-type="code" style="width: 835px; height: 90px; left: 86px; top: 235px;" data-block-id="c0dfa44477544aeaf796ca6d4353f330"><div class="sl-block-content" style="z-index: 12; font-size: 150%;" data-highlight-theme="zenburn"><pre><code>if race == "Elf":
+<div class="sl-block" data-block-type="code" style="width: 835px; height: 90px; left: 86px; top: 235px;" data-block-id="c0dfa44477544aeaf796ca6d4353f330"><div class="sl-block-content" style="z-index: 12; font-size: 150%;" data-highlight-theme="zenburn"><pre><code>if race_name == "Elf":
     print("Your homeland is in the forest")</code></pre></div></div>
 <div class="sl-block" data-block-type="text" style="height: auto; width: 819px; left: 80px; top: 342px;" data-block-id="79222208cbc6dc432ff81cc7067aa392"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
 <p>Notice that the second line has an indent (4 spaces)</p>
@@ -202,11 +202,11 @@ You will get an error if your 'if' statement is not followed by an indented line
 <div class="sl-block" data-block-type="text" style="height: auto; width: 901px; left: 30px; top: 117px;" data-block-id="8c008c81a572d6e60efb764f15449929"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
 <p>Let's add some branches in the code for each of the race choices:</p>
 </div></div>
-<div class="sl-block" data-block-type="code" style="width: 835px; height: 255px; left: 80px; top: 210px;" data-block-id="77459d5deda5e5ab6b8a33eca98fab54"><div class="sl-block-content" style="z-index: 12; font-size: 150%;" data-highlight-theme="zenburn"><pre><code>if race == "Elf":
+<div class="sl-block" data-block-type="code" style="width: 835px; height: 255px; left: 80px; top: 210px;" data-block-id="77459d5deda5e5ab6b8a33eca98fab54"><div class="sl-block-content" style="z-index: 12; font-size: 150%;" data-highlight-theme="zenburn"><pre><code>if race_name == "Elf":
     print("Your homeland is in the forest")
-elif race == "Goblin":
+elif race_name == "Goblin":
     print("Your homeland is the mountains")
-elif race == "Dwarf":
+elif race_name == "Dwarf":
     print("Your homeland is in the mines underground")
 else:
     print("Your homeland is in the city")</code></pre></div></div>
@@ -378,7 +378,7 @@ while health &gt; 0:
 
 		
 <script>
-	var SLConfig = {"current_user":{"id":680437,"username":"karolienkoorts","name":"Karolien Koorts","description":null,"thumbnail_url":"//graph.facebook.com/1712153498801926/picture","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":529536,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"editor_grid":true,"editor_snap":true,"developer_mode":false,"speaker_layout":null,"phone_number":null,"phone_country_code":null},"email":"ztopth@hotmail.com","notify_on_receipt":true,"billing_address":null,"editor_tutorial_completed":true,"manually_upgraded":false,"deck_user_editor_limit":1},"deck":{"id":948831,"slug":"coding-101","title":"Coding 101","description":"","width":960,"height":700,"visibility":"all","published_at":"2017-03-27T07:08:47.009Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/cc907e6fdac2c1f630690c6216d86607/thumb.jpg","view_count":0,"user":{"id":680437,"username":"karolienkoorts","name":"Karolien Koorts","description":null,"thumbnail_url":"//graph.facebook.com/1712153498801926/picture","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":529536,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"montserrat","theme_color":"beige-brown","auto_slide_interval":0,"comments_enabled":false,"forking_enabled":false,"rolling_links":false,"center":false,"should_loop":false,"share_notes":false,"slide_number":false,"rtl":false,"version":2,"collaborative":null,"deck_user_editor_limit":1,"data_updated_at":1490852338947,"font_typekit":null,"font_google":null,"access_token":"iqU59b1cRXHxtJqQk2zcobJJHEzr","notes":{}}};
+	var SLConfig = {"current_user":{"id":680437,"username":"karolienkoorts","name":"Karolien Koorts","description":null,"thumbnail_url":"//graph.facebook.com/1712153498801926/picture","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":529536,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"editor_grid":true,"editor_snap":true,"developer_mode":false,"speaker_layout":null,"phone_number":null,"phone_country_code":null},"email":"ztopth@hotmail.com","notify_on_receipt":true,"billing_address":null,"editor_tutorial_completed":true,"manually_upgraded":false,"deck_user_editor_limit":1},"deck":{"id":948831,"slug":"coding-101","title":"Coding 101","description":"","width":960,"height":700,"visibility":"all","published_at":"2017-03-27T07:08:47.009Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/cc907e6fdac2c1f630690c6216d86607/thumb.jpg","view_count":0,"user":{"id":680437,"username":"karolienkoorts","name":"Karolien Koorts","description":null,"thumbnail_url":"//graph.facebook.com/1712153498801926/picture","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":529536,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"montserrat","theme_color":"beige-brown","auto_slide_interval":0,"comments_enabled":false,"forking_enabled":false,"rolling_links":false,"center":false,"should_loop":false,"share_notes":false,"slide_number":false,"rtl":false,"version":2,"collaborative":null,"deck_user_editor_limit":1,"data_updated_at":1490857548145,"font_typekit":null,"font_google":null,"access_token":"iqU59b1cRXHxtJqQk2zcobJJHEzr","notes":{}}};
 </script>
 
 		<script>
