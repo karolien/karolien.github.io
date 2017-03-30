@@ -266,14 +266,58 @@ else:
 <p>This loop will go 3 times (try changing the value in range)</p>
 
 <p>Notice the indents (4 spaces) again - they decide which blocks of code belong to which statement.</p>
-</div></div></section>
+</div></div></section><section data-id="b63bf9155b3fddedc77832e92629d948"><div class="sl-block" data-block-type="text" style="height: auto; width: 838px; left: 61px; top: 22px;" data-block-id="b8f49e350ca6cf449c4755fc39819c3f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;">
+<h2>Character Health</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 901px; left: 30px; top: 117px;" data-block-id="a81ca433ca66d4fb19dcc516295253b9"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p>We will create a new variable called 'health' that we can add to and subtract from as the game progresses.</p>
+
+<p>Put this near the top of your code before you ask for the first user input:</p>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 203px; height: 39px; left: 379px; top: 291px;" data-block-id="8cb8b5c4523d02d04cbf42eb61c8f194"><div class="sl-block-content" style="z-index: 12; font-size: 150%;" data-highlight-theme="zenburn"><pre><code>health = 100</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 319px; left: 23px; top: 350px;" data-block-id="bd36a351de743d76e0b06db4d7f3e092"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p>Adding 10 to health:</p>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 203px; height: 39px; left: 74px; top: 389px;" data-block-id="af57d63234b1656070ecc145ffd16e11"><div class="sl-block-content" style="z-index: 15; font-size: 150%;" data-highlight-theme="zenburn"><pre><code>health += 10</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 407px; left: 560px; top: 350px;" data-block-id="5e9fe3c550ff7dacbf6d448089a288f2"><div class="sl-block-style" style="z-index: 16; transform: rotate(360deg);"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16;">
+<p>Subtracting 10 from health:</p>
+</div></div></div>
+<div class="sl-block" data-block-type="code" style="width: 203px; height: 39px; left: 655px; top: 389px;" data-block-id="453518154425821a0bc020e4bdc5feea"><div class="sl-block-content" style="z-index: 17; font-size: 150%;" data-highlight-theme="zenburn"><pre><code>health -= 10</code></pre></div></div>
+<div class="sl-block" data-block-type="code" style="width: 653px; height: 39px; left: 164px; top: 591px;" data-block-id="e604f42e78a3f0cf5d06fc56deb62cf6"><div class="sl-block-content" style="z-index: 18; font-size: 150%;" data-highlight-theme="zenburn"><pre><code>print("Your health is now: " + str(health))</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 882px; left: 49px; top: 462px;" data-block-id="f4841241432dd87748ba6e2786b1eca2"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 19;">
+<p>When you would like to print the health you need to tell the program to treat it as a 'string type' (remember word or sentence) as it is in fact an 'integer type' (whole number)</p>
+</div></div></section><section data-id="9a83dbed2a2a355cab37e037cb355477"><div class="sl-block" data-block-type="text" style="height: auto; width: 838px; left: 61px; top: 22px;" data-block-id="70cbdd2fef333f2eb1748e32e2010c6b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;">
+<h2>Example Scenario 1</h2>
+</div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 935px; height: 604px; left: 12px; top: 96px;" data-block-id="6d61b24d8b8fd6b9da114669ee4657dd"><div class="sl-block-content" style="z-index: 12; font-size: 150%;" data-highlight-theme="zenburn"><pre><code>health = 100
+
+print("A wild monster appears.")
+print("Do you: 0. Run! 1. Freeze 2. Attack!")
+response = int(input("Enter your choice: "))
+if response == 0:
+    print("You run away and the monster destroys a village.")
+elif response == 1:
+    print("The monster eats you!!")
+    health = 0
+else:
+    print("You fight the monster!")
+    health -= 20
+    print("You kill it!")
+
+if health &lt;= 0:
+    print("You are dead.")
+    quit()
+else:
+    print("Your health is " + str(health) + "%")</code></pre></div></div>
+</section>
 			</div>
 		</div>
 
 
 		
 <script>
-	var SLConfig = {"current_user":{"id":680437,"username":"karolienkoorts","name":"Karolien Koorts","description":null,"thumbnail_url":"//graph.facebook.com/1712153498801926/picture","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":529536,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"editor_grid":true,"editor_snap":true,"developer_mode":false,"speaker_layout":null,"phone_number":null,"phone_country_code":null},"email":"ztopth@hotmail.com","notify_on_receipt":true,"billing_address":null,"editor_tutorial_completed":true,"manually_upgraded":false,"deck_user_editor_limit":1},"deck":{"id":948831,"slug":"coding-101","title":"Coding 101","description":"","width":960,"height":700,"visibility":"all","published_at":"2017-03-27T07:08:47.009Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/cc907e6fdac2c1f630690c6216d86607/thumb.jpg","view_count":0,"user":{"id":680437,"username":"karolienkoorts","name":"Karolien Koorts","description":null,"thumbnail_url":"//graph.facebook.com/1712153498801926/picture","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":529536,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"montserrat","theme_color":"beige-brown","auto_slide_interval":0,"comments_enabled":false,"forking_enabled":false,"rolling_links":false,"center":false,"should_loop":false,"share_notes":false,"slide_number":false,"rtl":false,"version":2,"collaborative":null,"deck_user_editor_limit":1,"data_updated_at":1490823364610,"font_typekit":null,"font_google":null,"access_token":"iqU59b1cRXHxtJqQk2zcobJJHEzr","notes":{}}};
+	var SLConfig = {"current_user":{"id":680437,"username":"karolienkoorts","name":"Karolien Koorts","description":null,"thumbnail_url":"//graph.facebook.com/1712153498801926/picture","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":529536,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"editor_grid":true,"editor_snap":true,"developer_mode":false,"speaker_layout":null,"phone_number":null,"phone_country_code":null},"email":"ztopth@hotmail.com","notify_on_receipt":true,"billing_address":null,"editor_tutorial_completed":true,"manually_upgraded":false,"deck_user_editor_limit":1},"deck":{"id":948831,"slug":"coding-101","title":"Coding 101","description":"","width":960,"height":700,"visibility":"all","published_at":"2017-03-27T07:08:47.009Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/cc907e6fdac2c1f630690c6216d86607/thumb.jpg","view_count":0,"user":{"id":680437,"username":"karolienkoorts","name":"Karolien Koorts","description":null,"thumbnail_url":"//graph.facebook.com/1712153498801926/picture","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":529536,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"montserrat","theme_color":"beige-brown","auto_slide_interval":0,"comments_enabled":false,"forking_enabled":false,"rolling_links":false,"center":false,"should_loop":false,"share_notes":false,"slide_number":false,"rtl":false,"version":2,"collaborative":null,"deck_user_editor_limit":1,"data_updated_at":1490842417843,"font_typekit":null,"font_google":null,"access_token":"iqU59b1cRXHxtJqQk2zcobJJHEzr","notes":{}}};
 </script>
 
 		<script>
